@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    buildFeatures { buildConfig = true }
     namespace 'com.sidis.cardash'
     compileSdk 36
 
