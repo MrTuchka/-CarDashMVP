@@ -1,0 +1,1 @@
+CarDash MVP 0.2 — Tesla-style UI, Bluetooth OBD, WebView map/YouTube, PiP, ACC sleep/wake.
