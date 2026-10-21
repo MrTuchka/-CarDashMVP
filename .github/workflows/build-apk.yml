@@ -25,6 +25,8 @@ jobs:
           gradle-version: '9.6.0'
 
       - name: Build debug APK
+        env:
+          MAPS_API_KEY: ${{ secrets.MAPS_API_KEY }}
         run: gradle :app:assembleDebug --stacktrace
 
       - name: Upload APK

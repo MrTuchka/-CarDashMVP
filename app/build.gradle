@@ -11,8 +11,11 @@ android {
         applicationId 'com.sidis.cardash'
         minSdk 26
         targetSdk 36
-        versionCode 3
-        versionName '0.3.0'
+        versionCode 4
+        versionName '0.4.0'
+
+        def mapsApiKey = System.getenv("MAPS_API_KEY") ?: ""
+        manifestPlaceholders = [MAPS_API_KEY: mapsApiKey]
     }
 
     buildTypes {
@@ -26,4 +29,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+}
+
+
+dependencies {
+    implementation 'com.google.android.gms:play-services-maps:19.2.0'
 }
